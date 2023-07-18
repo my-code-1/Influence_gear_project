@@ -47,17 +47,18 @@ nav ul li>a{
     width: 100%;
 }
 .content-description{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color:rgb(120, 111, 111);
     margin-top: 20px;
 }
 .btn-primary{
     border: none;
-    border-radius: 50%;
+    border-radius: 35px/60px;
     color:azure;
     background-color: rgb(210, 54, 54);
-    padding: 15px;
+    padding: 10px;
     margin-top: 20px;
+    margin-left: 20px;
 
 }
 .banner-content{
@@ -92,6 +93,10 @@ main{
     max-width: 1100px;
     margin: 0 auto;
 }
+.popular-content{
+    text-align: center;
+    color: rgb(105, 100, 100);
+}
 .data-container{
     display: grid;
     grid-template-columns: repeat(3,350px);
@@ -105,6 +110,31 @@ main{
     width: 90%;
     padding-left: 17px;
     padding-top: 20px;
+}
+.data-collection h2,h4,p{
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+.data-collection p{
+    color:gray;
+}
+/* product part */
+.product-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+.product-title{
+    text-align: center;
+    margin-left: 17px;
+}
+.product-description{
+    color:rgb(132, 125, 125);
+    margin-top: 10px;
+}
+.product-content{
+    max-width: 400px;
 }
 /* responsive part */
 @media screen and (max-width:576px) 
@@ -162,6 +192,15 @@ main{
         grid-template-columns: repeat(1,400px);
         justify-content: center;
         text-align: center;
+    }
+    .product-container{
+        flex-direction: column;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-content{
+        margin-top: 20px;
     }
 
 
